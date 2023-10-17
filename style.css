@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  body{
+    background: linear-gradient(45deg, green 50%, yellow 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+  }
+
+  .container {
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+  }
+
+  .container * {
+    border: none;
+    outline: none;
+  }
+
+  .input-box {
+    margin-bottom: 20px;
+    display: grid;
+    gap: 10px;
+  }
+
+
+  input[type="date"],
+  input,
+  button {
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    transition: border-color 0.5s;
+  }
+
+  input[type="date"] {
+    background-color: #f3f3f3;
+  }
+
+  input:focus,
+  button:focus,
+  input[type="date"]:focus {
+    border-color: #2fb103;
+  }
+   
+  button {
+    color: #fff;
+    background-color: #228B22;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+  }
+   
+  button:hover {
+    background-color: #ADFF2F;
+    color: black;
+    font-weight: 600;
+  }
+
+  .output-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .output-box div {
+    flex-basis: calc(50% - 20px);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #151515;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 0.87em;
+    color: #707070;
+    font-weight: 600;
+  }
+
+  footer{
+    margin-top: 50px;
+
+  }
+
+  footer .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  footer .social-links ul {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  footer .social-links li {
+    margin-right: 10px;
+  }
+
+  footer .social-links img {
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    .output-wrapper div {
+      flex-basis: calc(100% - 20px);
+    }
+  }
